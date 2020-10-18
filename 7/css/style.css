@@ -1,0 +1,257 @@
+/* 전체 글씨체 */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 글자 */
+body{
+  color: var(--font);
+  font-family: 'NanumSquareRound','Noto Sans';
+}
+
+/* ======================
+          색상
+========================*/
+:root{
+  --font:#424242;
+  --primary: #FF6F61;
+  --primary-hover:#FF6F61;
+  --primary-focus:#DB4746;
+  --board-header: #e9ecef;
+  --warning: #FFBE3D;
+  --warning-hover: #DB9A2C;
+  --warning-focus: #DB9A2C;
+  --danger:#FC929B;
+  --danger-hover: #D86A7E;
+  --danger-focus: #D86A7E;
+}
+
+/* 기본 색상 설정 */
+.border-primary {
+  border-color:var(--primary) !important;
+}
+
+/* ======================
+          버튼
+========================*/
+/* primary버튼 */
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  color: var(--white);
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: var(--white);
+  background-color: var(--primary-focus);
+  border-color: var(--primary-focus);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: var(--white);
+  background-color: var(--primary-focus);
+  border-color: var(--primary-focus);
+}
+
+.btn-primary:focus, .btn-primary.focus, 
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus{
+  box-shadow: none;
+}
+
+/* warning버튼 */
+.btn-warning {
+  color: var(--white);
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+
+.btn-warning:hover {
+  color: var(--white);
+  background-color: var(--warning-hover);
+  border-color: var(--warning-hover);
+}
+
+.btn-warning:focus, .btn-warning.focus {
+  color: var(--white);
+  background-color: var(--warning-focus);
+  border-color: var(--warning-focus);
+}
+
+.btn-warning.disabled, .btn-warning:disabled {
+  color: var(--white);
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
+.show > .btn-warning.dropdown-toggle {
+  color: var(--white);
+  background-color: var(--warning-focus);
+  border-color: var(--warning-focus);
+}
+
+.btn-warning:focus, .btn-warning.focus, 
+.btn-warning:not(:disabled):not(.disabled).active:focus,
+.btn-warning:not(:disabled):not(.disabled):active:focus,
+.show>.btn-warning.dropdown-toggle:focus{
+  box-shadow: none;
+}
+
+/*danger 버튼*/
+.btn-danger {
+  color: var(--white);
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn-danger:hover {
+  color: var(--white);
+  background-color: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.btn-danger:focus, .btn-danger.focus {
+  color: var(--white);
+  background-color: var(--danger-focus);
+  border-color: var(--danger-focus);
+}
+
+.btn-danger.disabled, .btn-danger:disabled {
+  color: var(--white);
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active,
+.show > .btn-danger.dropdown-toggle {
+  color: var(--white);
+  background-color: var(--danger-focus);
+  border-color: var(--danger-focus);
+}
+
+.btn-danger:focus, .btn-danger.focus, 
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.show>.btn-danger.dropdown-toggle:focus{
+  box-shadow: none;
+}
+
+/* ======================
+          폼
+========================*/
+textarea{
+  resize: none;
+}
+
+/* select */
+.custom-select:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+/* file */
+.custom-file-input:focus ~ .custom-file-label {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+/* pagenation */
+.page-link {
+  color: var(--primary);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.page-link:hover {
+  color: var(--primary-hover);
+}
+
+.page-item.active .page-link {
+  background-color:var(--primary);
+  border-color: var(--primary);
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+/* nav-pills */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+/* ======================
+          링크
+========================*/
+a{
+  color:var(--font);
+}
+
+a:hover{
+  color:var(--primary-hover);
+  text-decoration: none;
+}
+
+/* input 포커스 */
+.form-control:focus{
+  color:var(--secondary);
+  border-color:var(--primary);
+  outline:0;
+  box-shadow:none;
+}
+
+/* ======================
+      스크롤 탑
+========================*/
+html {
+  scroll-behavior: smooth;
+}
+
+.to-top {
+  background: var(--gray);
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:var(--white);
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+  z-index: 9999;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}

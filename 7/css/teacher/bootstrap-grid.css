@@ -125,6 +125,7 @@ html {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  padding: 3% 5%;
 }
 
 @media (min-width: 576px) {
